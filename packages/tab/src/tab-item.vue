@@ -14,7 +14,10 @@ export default {
   computed: {
     activeStyle () {
       return {
-        color: this.$parent.activeColor
+       activeStyle () {
+          let str=`color: ${this.$parent.activeColor};font-size:.38rem`
+          return str
+        }
       }
     }
   },
